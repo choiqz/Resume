@@ -11,7 +11,7 @@
 \titleformat{\section}[hang]{\bfseries}{}{0em}{}[\hrule]
 
 % Define subsection format
-\titleformat{\subsection}[hang]{\normalfont\large\bfseries}{}{0em}{}[\hrule]
+\titleformat{\subsection}[hang]{\normalfont\large\bfseries}{}{0em}{\hspace{8em}}[\hrule]
 
 % Adjust spacing above and below sections
 \titlespacing*{\section}{0pt}{\baselineskip}{0.5\baselineskip}
@@ -19,7 +19,7 @@
 
 % Custom sublist environment for subsections
 \newlist{sublist}{itemize}{1}
-\setlist[sublist]{label=\textbullet, nosep, leftmargin=*, itemsep=0.01\baselineskip, parsep=0.2\baselineskip, itemindent=1.5em, topsep=0.3\baselineskip}
+\setlist[sublist]{label=\textbullet, nosep, leftmargin=1.5em, labelindent=0.5em, itemsep=0.1\baselineskip, parsep=0.2\baselineskip, topsep=0.3\baselineskip}
 
 \begin{document}
 
