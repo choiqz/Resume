@@ -43,5 +43,3 @@ Thank you for taking the time to explore my resume. If you have any inquiries, o
 - LinkedIn: [linkedin.com/in/jeongwan-choi](https://www.linkedin.com/in/jeongwan-choi/)
 
 I look forward to connecting with you!
-
-# resume
