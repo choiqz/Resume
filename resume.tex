@@ -11,11 +11,15 @@
 \titleformat{\section}[hang]{\bfseries}{}{0em}{}[\hrule]
 
 % Define subsection format
-\titleformat{\subsection}[hang]{\normalfont\large\bfseries}{}{0em}{}[\hrule]
+\titleformat{\subsection}[hang]{\normalfont\large\bfseries}{\hspace{1em}}{0em}{}[\hrule]
 
 % Adjust spacing above and below sections
 \titlespacing*{\section}{0pt}{\baselineskip}{0.5\baselineskip}
-\titlespacing*{\subsection}{0pt}{0.5\baselineskip}{0.125\baselineskip}
+\titlespacing*{\subsection}{0pt}{0.25\baselineskip}{0.125\baselineskip}
+
+% Custom sublist environment for subsections
+\newlist{sublist}{itemize}{1}
+\setlist[sublist]{label=\textbullet, nosep, leftmargin=1.5em, itemsep=0.2\baselineskip, parsep=0.2\baselineskip}
 
 \begin{document}
 
@@ -42,28 +46,28 @@ Relevant Coursework: Logic \& Computation, Data Structures \& Algorithms, Random
 
 \section*{EXTRACURRICULAR ACTIVITIES}
 \textbf{Lincoln-Douglas Debate,} Lexington, MA, \textit{Competitor and TA} \hfill September 2017 - May 2021
-\begin{itemize}[leftmargin=1.5em]
+\begin{sublist}
   \item Employed public speaking, critical thinking, and research to even record at the Tournament of Champions (top 60), Semifinalist at Yale.
   \item Awarded 2021 NSDA Medal of Superior Distinction (top 2\%)
   \item Mentored 20+ freshmen in my senior year to hone their argumentation and persuasion.
-\end{itemize}
+\end{sublist}
 
 \section*{WORK EXPERIENCE}
 \textbf{Boston College CS Department;} \textit{Teaching Assistant} \hfill Jan 2023 - July 2023 
-\begin{itemize}[leftmargin=1.5em]
+\begin{sublist}
 	\item Helped students in Data Structures \& Algorithms (CSCI 1102) learn Java and object-oriented programming. 
 	\item Led weekly, hour-long discussion sections for 20+ students. 
 	\item Held weekly office hour sessions for one-on-one student assistance.
-\end{itemize}
+\end{sublist}
 
 \raggedright
 \textbf{Lexington Debate Institute;} \textit{On-site director} \hfill August 2022 - Present \\
-\begin{itemize}[leftmargin=1.5em]
+\begin{sublist}
 	\item Main instructor of a 4-week camp session for 30+ middle and high school students. 
 	\item Lectured and facilitated drills to establish a broad foundation of debate skills.
-\end{itemize}
+\end{sublist}
 
-\section*{Foreign Languages}
+\section*{FOREIGN LANGUAGES}
 \textbf{Korean} (proficiency), \textbf{Mandarin} (intermediate)
 
 \end{document}
