@@ -1,8 +1,16 @@
 
 \documentclass[11pt]{article}
-\usepackage[margin=1in]{geometry}
+\usepackage[margin=0.5in]{geometry}
 \usepackage{enumitem}
 \usepackage{titlesec}
+\usepackage{fancyhdr}  % For footer customization
+
+% Set up fancy page style
+\pagestyle{fancy}
+\fancyhf{} % Clear all header/footer fields
+\renewcommand{\headrulewidth}{0pt} % Remove header rule
+\fancyfoot[C]{\thepage} % Center page number in footer
+\setlength{\footskip}{10pt}  % Increase space between text and footer
 
 % Define bullet style
 \setlist[itemize]{label=\textbullet, itemsep=0.2\baselineskip, parsep=0.2\baselineskip}
@@ -38,14 +46,15 @@ GPA: 3.6/4.00 \\
 Relevant Coursework: Data Structures \& Algorithms, Algorithms, Computer Systems, Logic \& Computation, Randomness \& Computation, Biomedical Image Analysis 
 
 \section*{TECHNICAL SKILLS}
-\textbf{Languages/Frameworks:} Python, .NET/C\#, NUnit, Selenium, Java, SQL, Flask, JavaScript, HTML/CSS\\
+\textbf{Languages/Frameworks:} Python, .NET/C\#, NUnit, Selenium, Django, Java, SQL, Flask, JavaScript, \\
+HTML/CSS \\
 \textbf{Tools:} Linux, Gerrit, Jenkins, Neovim, Jinja, Git, BitBucket 
 
 \section*{WORK EXPERIENCE}
 \textbf{enLabel Global Services;} \textit{Software Development Intern} \hfill \textbf{June 2024 - Aug 2024}
 \begin{sublist}
-	\item Developed and maintained automated test suites using .NET/C\# and NUnit, reducing IPM Selenium build failures by more than 40\%  
-	\item Collaborated with the development team to integrate automated tests into the CI/CD pipeline, enhancing software delivery process and accelerating deployment times
+	\item Developed and maintained automated test suites using .NET/C\# and NUnit, reducing IPM Selenium build failures by more than 40\%. 
+	\item Collaborated with the development team to integrate automated tests into the CI/CD pipeline, enhancing software delivery process and accelerating deployment times.
 \end{sublist}
 
 \raggedright
@@ -53,21 +62,31 @@ Relevant Coursework: Data Structures \& Algorithms, Algorithms, Computer Systems
 \begin{sublist}
 	\item Created secondary password web-service using Python Flask and Jinja templating that returns back-up codes for users locked out of their accounts. 
 	\item Built a modular DB CRUD interface handling suspended users and displaying their status using Flask, SQL, HTML/CSS.
-	\item Participated in code reviews with Collaboration Systems team and communicated with team members on effective development practices.
 \end{sublist}
 
 \raggedright
 \textbf{Boston College CS Department;} \textit{Teaching Assistant} \hfill \textbf{Jan 2023 - May 2023}
 \begin{sublist}
 	\item Helped students in Data Structures \& Algorithms (CSCI 1102) learn Java and object-oriented programming. 
-	\item Led weekly, hour-long discussion sections for 20+ students. 
-	\item Held weekly office hour sessions for one-on-one student assistance.
+	\item Led weekly, hour-long discussion sections for 20+ students and weekly office-hour sessions for individualized assistance. 
+\end{sublist}
+
+\section*{PROJECTS}
+\raggedright
+\textbf{Green Campus Dining;}  \textit{Main Contributor} \hfill \textbf{Sept 2024 - Dec 2024}
+\begin{sublist}
+	\item Contributed towards a group Django project aimed at incentivizing BC students to use sustainable dining practices.
+	\item Spearheaded significant UI changes to core features: navigation, profile, and rewards.
+\end{sublist}
+
+\raggedright
+\textbf{Slumbermeter;}  \textit{Main Contributor} \hfill \textbf{Sept 2024 - Dec 2024}
+\begin{sublist}
+	\item Designed a web page to track sleep quality across time using raw JavaScript, HTML/CSS with other group members.
+	\item Implemented an algorithm that generates a sleep score based on user-inputted data and bedtime routine.
 \end{sublist}
 
 \section*{HONORS}
 2021 NSDA Medal of Superior Distinction (top 2\% HS Debate), 2021 Gold President’s Volunteer Service Award, 2021 AP Scholar with Distinction
-
-\section*{FOREIGN LANGUAGES}
-\textbf{Korean} (proficiency), \textbf{Mandarin} (intermediate)
 
 \end{document}
